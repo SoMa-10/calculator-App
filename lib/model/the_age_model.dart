@@ -5,6 +5,7 @@ class TheAge {
   int days;
 
   TheAge() {
+    // كنستركتر
     ages = 0;
     months = 0;
     days = 0;

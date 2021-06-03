@@ -8,6 +8,7 @@ import 'package:provider/provider.dart';
 
 void main() {
   runApp(ChangeNotifierProvider(
+    // وجت الثيم المبدئي
     child: MyApp(),
     create: (th) => ThemeChanger(FuckTory.liteTheme()),
   ));
@@ -26,6 +27,7 @@ class MyAppState extends State<MyApp> {
         debugShowCheckedModeBanner: false,
         theme: theme.getTheme(),
         home: AnimatedSplashScreen(
+          // وجت السبلاش
           splashIconSize: 300,
           duration: 500,
           splashTransition: SplashTransition.sizeTransition,
@@ -33,6 +35,7 @@ class MyAppState extends State<MyApp> {
           backgroundColor: Colors.white,
           splash: Image.asset('images/background.png'),
           nextScreen: Directionality(
+            // وجت إتجاه النصوص
             child: User(),
             textDirection: TextDirection.rtl,
           ),

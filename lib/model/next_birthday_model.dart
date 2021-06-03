@@ -5,6 +5,7 @@ class NextBirthDay {
   int days;
 
   NextBirthDay() {
+    // كنستركتر
     ages = 0;
     months = 0;
     days = 0;

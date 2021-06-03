@@ -11,8 +11,10 @@ class HomeTabs extends StatelessWidget {
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () => showDialog(
+        // مثود مربع فارغ
         context: context,
         builder: (context) => AlertDialog(
+          // وجت الخروج من التطبيق
           content: Text('هل انت متأكد'),
           title: Text('هل تريد الخروج من التطبيق'),
           actions: [
@@ -24,10 +26,12 @@ class HomeTabs extends StatelessWidget {
         ),
       ),
       child: DefaultTabController(
+        // وجت التاب سحب افقي
         length: 2,
         child: Scaffold(
           appBar: appbar.appbar(context),
           body: TabBarView(
+            // وجت الصفحات
             children: [Home(), Setting()],
           ),
         ),

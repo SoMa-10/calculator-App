@@ -59,6 +59,7 @@ class SettingState extends State<Setting> {
   }
 
   Widget buildListSetting(String text, Icon icon, Function fun) {
+    // مثود اللغة
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
@@ -76,7 +77,7 @@ class SettingState extends State<Setting> {
   }
 
   Widget buildListSetting1(String text, Icon icon,) {
-
+    // مثود الوضع الليلي
     if(_theme.getTheme() == FuckTory.darkTheme()){th = true;}
     setState(() {});
     return Column(
@@ -108,6 +109,7 @@ class SettingState extends State<Setting> {
   }
 
   Widget buildLine() {
+    // مثود الخط
     return Divider(
       indent: 50,
       color: Colors.grey,
@@ -115,6 +117,7 @@ class SettingState extends State<Setting> {
   }
 
   Widget buildUserAccounts() {
+    // مثود اسم المستخدم
     return Container(
       height: 180,
       
@@ -143,6 +146,7 @@ class SettingState extends State<Setting> {
   }
 
   Widget buildIconCall() {
+    // مثود ايقونة الاتصال
     return IconButton(
       icon: Icon(Icons.call),
       onPressed: () {
@@ -152,6 +156,7 @@ class SettingState extends State<Setting> {
   }
 
   Widget buildIconSms() {
+    // مثود ايقونة الرسائل
     return IconButton(
       icon: Icon(Icons.sms),
       onPressed: () {
@@ -161,6 +166,7 @@ class SettingState extends State<Setting> {
   }
 
   Widget buildIconEmail() {
+    // مثود ايقونة الاميل
     return IconButton(
       icon: Icon(Icons.email),
       onPressed: () {
@@ -170,6 +176,7 @@ class SettingState extends State<Setting> {
   }
 
   Widget buildRow() {
+    // مثود ترتيب مثودات الايقونات
     return Container(
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.end,
@@ -184,6 +191,7 @@ class SettingState extends State<Setting> {
   }
 
   Widget buildAbout(){
+    // مثود الخول
     return Container(height: 120,
       padding: EdgeInsets.symmetric(horizontal: 10),
       child: ExpansionTile(
